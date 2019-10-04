@@ -1,0 +1,68 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>cn.sz.lwt.springcloud</groupId>
+    <artifactId>SpringCloudParent</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+  </parent>
+  <artifactId>microsoftServiceCloud-zuul-gateway-9527</artifactId>
+	
+	<dependencies>
+	
+	<!-- hystrix -->
+		<dependency>
+				<groupId>org.springframework.cloud</groupId>
+				<artifactId>spring-cloud-starter-netflix-hystrix</artifactId>
+		</dependency>
+	<!-- dashboard熔断监控 -->
+    <dependency>
+      <groupId>org.springframework.cloud</groupId>
+      <artifactId>spring-cloud-starter-netflix-hystrix-dashboard</artifactId>
+    </dependency>
+     <!-- zuul -->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-netflix-zuul</artifactId>
+        </dependency>
+     <!-- actuator监控信息完善 --> 
+	 	 <dependency>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-starter-actuator</artifactId>
+		</dependency>   
+  <!-- 引入api模块 -->
+	  <dependency>
+	  		<groupId>cn.sz.lwt.springcloud</groupId>
+	  		<artifactId>microsoftServiceCloud-api</artifactId>
+	  		<version>${project.version}</version>
+	  </dependency>
+	  
+	 <!-- web -->
+		<dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+		</dependency>
+	<!-- 热部署  -->
+		<dependency>
+		    <groupId>org.springframework.boot</groupId>
+		    <artifactId>spring-boot-devtools</artifactId>
+		    <optional>true</optional>
+		    <scope>true</scope>
+		</dependency> 
+	<!-- ribbon -->	
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-netflix-ribbon</artifactId>
+		</dependency>
+	<!-- eureka客户端 -->
+	  <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
+        </dependency>
+      <!-- feign -->
+	 <dependency>
+		    <groupId>org.springframework.cloud</groupId>
+		    <artifactId>spring-cloud-starter-openfeign</artifactId>
+	</dependency>	 
+	  </dependencies>
+	
+</project>
