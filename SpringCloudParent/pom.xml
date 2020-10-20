@@ -14,7 +14,7 @@
 		<lombok.version>1.16.18</lombok.version>
 	</properties>
   
-  <dependencyManagement> 
+  <dependencyManagement>
         <dependencies>
         	<dependency>
                 <groupId>org.springframework.cloud</groupId>
